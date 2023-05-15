@@ -541,3 +541,56 @@ input[type="text"]{
     font-size: 14px;
     color: #897c7c;
 }
+
+/* contact page Design */
+.contact_form_section{
+  padding: 45px 0px 120px;
+}
+.contact_us_form{
+  padding: 0px 0px 0px 100px;
+}
+.button_row{
+  text-align: left;
+}
+.button_row button{
+  background-color: #26aeed;
+  border: none;
+  padding: 7px 22px;
+  border-radius: 5px;
+  transition: .4s;
+  color: #fff;
+}
+.button_row button:hover{
+  background-color: #e8b11a;
+  color: #fff;
+}
+.contact_text{
+  text-align: left;
+}
+.contact_title{
+  padding: 0px 133px 14px 0px;
+}
+input.input_field.form-control {
+  padding: 11px 14px;
+}
+.form-control:focus{
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #cfcfcf !important;
+}
+
+/* swiper desing here */
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 23px !important;
+    color: #fff;
+}
+.slider_left .swiper-button-prev, .slider_left .swiper-button-next,.slider_right .swiper-button-prev, .slider_right .swiper-button-next {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+}
+.slider_left .swiper-button-prev:hover, .slider_left .swiper-button-next:hover,.slider_right .swiper-button-prev:hover, .slider_right .swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
