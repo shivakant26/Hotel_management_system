@@ -1,0 +1,543 @@
+.App {
+  text-align: center;
+}
+.header{
+  padding: 25px 0px;
+}
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo_area{
+  display: flex;
+}
+.logo_text h1{
+  width: 250px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+    font-family: Montserrat, sans-serif;
+    font-size: 29px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.logo_text a{
+  text-decoration: none;
+    color: #000;
+}
+.logo_text .subtitle{
+  color: #bdbdbd;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.menu_bottom ul , .social_icon ul{
+  list-style-type: none;
+  display: flex;
+}
+.menu_bottom ul li,.social_icon ul li{
+  padding: 0px 10px;
+}
+.menu_bottom ul li a , .social_icon ul li a{
+  text-decoration: none;
+  color: #222222;
+  transition: .4s;
+}
+.social_icon ul li a{
+  color: gray;
+}
+.menu_bottom ul li a:hover,.social_icon ul li a:hover{
+  color: #222222;
+}
+strong{
+  color: #a3a3a3;
+  font-size: 15px;
+  line-height: 21px;
+}
+.menu_top span a{
+  text-decoration: none;
+  color: #35cae6;
+}
+.active{
+  color: #222222 !important;
+}
+.menu_top{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+/* slider design */
+.banner_section{
+  position: relative;
+}
+.slider_one{
+  background-image: url("./assets/images/banner1.jpg");
+  background-size: cover;
+  position: relative;
+}
+.slider_two{
+  background-image: url("./assets/images/banner2.jpg");
+  background-size: cover;
+}
+.slider_three{
+  background-image: url("./assets/images/banner3.jpg");
+  background-size: cover;
+}
+.slider_text{
+  position: relative;
+  height: 100%;
+  padding: 347px 0px;
+  text-align: right;
+}
+.a_glorious{
+  text-align: center;
+    display: inline-block;
+    width: 40%;
+    background: #302a2a;
+    color: #fff;
+    padding: 12px 25px;
+}
+.more_about{
+  background: #e8b11a;
+  padding: 8px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+.hero_form_section{
+  position: relative;
+  padding: 40px 0px;
+  background-color: black;
+}
+.hero_form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column1,.column2,.column3,.column4{
+  margin: 10px;
+  width: 20%;
+  text-align: left;
+}
+.hero_form p{
+  color: #fff;
+}
+input[type="text"]{
+  height: 40px;
+  margin-bottom: 0px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+.subs_btn{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #26aeed;
+  border-radius: 3px;
+  background-color: #26aeed;
+  color: #fff;
+  transition: .4s;
+  font-family: Montserrat, sans-serif;
+}
+.subs_btn:hover{
+  background-color: #1976a1;
+}
+.span_text{
+  color: #fff;
+  margin-bottom: 10px;
+  display: inline-block
+}
+.span_text svg{
+  margin-right: 8px;
+}
+
+/* wf_section */
+
+.wf_section{
+  padding: 40px 0px;
+}
+.slider_left img ,.slider_right img{
+  width: 100%;
+  height: 450px;
+  border-radius: 10px
+}
+
+/* blog section */
+
+.blog_section{
+  background-color: #f2f3f5;
+  padding: 60px 0px;
+}
+.blog_card_wr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blog_card{
+  position: relative;
+  width: 48%;
+  border-radius: 5px;
+  height: 217px;
+  border: 1px solid gray;
+}
+.blog_card img{
+  width: 100%;
+  height: 217px;
+}
+.blog_card_overlay , .service_overlay ,.hotal_overlay,.overlay{
+  position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.blog_text{
+  position: absolute;
+    top: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 30px 60px 22px 202px;
+    text-align: left;
+}
+/* service section */
+.service_section{
+  background-image: url("./assets/images/banner1.jpg");
+  padding: 100px 0px;
+  position: relative;
+}
+.service_wr{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-around;
+}
+.services{
+  width: 45%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.color_full_star svg{
+  color: #e8b11a;
+}
+.service_content p{
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.service_content h4{
+  margin-bottom: 16px;
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+.about_author{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.author_image img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-right: 25px;
+}
+.author_name{
+  padding: 12px 0px;
+}
+.author_name h5{
+  margin: 0;
+}
+
+/* our service section */
+
+.our_service_section{
+  padding: 80px 0px;
+}
+
+.our_service_card_wr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.our_scard{
+  padding: 35px 35px 25px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #454545;
+    width: 30%;
+    text-align: center;
+}
+.our_scard svg{
+  font-size: 58px;
+}
+.our_scard.phone svg {
+  font-size: 41px;
+  margin-bottom: 16px;
+}
+/* footer section */
+.footer_top{
+  background-color: #3d3e47;
+  padding: 40px 0px;
+}
+.footer_wr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.common_list{
+  width: 18%;
+}
+.common_list h4{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: left;
+}
+.common_list ul{
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+}
+.common_list ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.follow_us.common_list ul li, .contact_us.common_list ul li{
+  padding: 5px 0px;
+}
+.information.common_list ul li,.popular.common_list ul li{
+  padding: 2px 0px;
+}
+.follow_us.common_list ul li a,.information.common_list ul li a,.popular.common_list ul li a{
+  color: #27b2f2;
+  transition: .4s;
+}
+.follow_us.common_list ul li a:hover,.information.common_list ul li a:hover,.popular.common_list ul li a:hover{
+  color: #fff;
+  text-decoration: underline;
+  
+}
+.icon_svg svg{
+  color: #fff;
+  margin-right: 14px;
+}
+.footer_bottom{
+  background-color: #31323b;
+} 
+.footer_btm{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0px;
+  color:#fff;
+}
+.copyright a, .poweredby a{
+ color: #27b2f2;
+ text-decoration: none;
+ transition: .4s;
+ text-transform: capitalize;
+}
+.copyright a:hover, .poweredby a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* About page Desing */
+.hotal_banner_section{
+  background-image: url("./assets/images/banner3.jpg");
+  padding: 80px 0px 80px 140px;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+.about_text{
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: left;
+}
+.about_text .page_title{
+  text-transform: uppercase;
+  font-size: 45px;
+}
+.about_text .subtitle{
+  display: inline-block;
+    margin-top: 12px;
+    margin-right: 10px;
+    opacity: 1;
+    color: #e8e8e8;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.about_hotal{
+  padding: 60px 0px;
+}
+.about_hotal_wr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+.common_layout{
+  width: 31%;
+}
+.para_gray{
+  color: #a3a3a3;
+  font-size: 15px;
+  line-height: 25px;
+}
+.we_offer h2{
+  margin-bottom: 40px;
+  margin-top: 0px;
+  color: #292929;
+  font-size: 27px;
+  line-height: 34px
+}
+.common_layout ul{
+  list-style: none;
+  padding: 0;
+}
+.common_layout ul li{
+  padding: 3px 0px;
+}
+.common_layout ul li a{
+  color: #27b2f2;
+  transition: .4s;
+}
+.common_layout ul li a:hover{
+  color: #222222;
+}
+.lorem_text a{
+  text-transform: capitalize;
+  color: #27b2f2;
+  transition: .4s;
+}
+.lorem_text a:hover{
+  color:#222222
+}
+.our_popular_destination{
+  background-image: url("./assets/images/banner3.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    padding: 120px 0;
+}
+.the_popular{
+  display: block;
+    width: 100%;
+    border: 4px solid #dedede;
+    background-image: url("./assets/images/banner3.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+.popular_text{
+  margin-bottom: 25px;
+    font-family: Montserrat, sans-serif;
+    color: #212121;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.popular_overlay{
+  padding: 45px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(26%, #fff), color-stop(89%, hsla(0, 0%, 100%, 0)));
+}
+/* Resort page desing  */
+.resort_gallery{
+  padding: 80px 0px;
+}
+.resort_pool{
+  position: relative;
+  background-image: url("./assets/images/swimingpool.jpg");
+  padding: 120px 0;
+  background-position: 50% 50%;
+    background-size: cover;
+}
+.services.resort {
+  width: unset;
+  text-align: left;
+}
+.right_img img{
+  width: 100%;
+  border-radius: 5px;
+}
+.image_row img{
+  height: 166px;
+  width: 100%;
+  margin: 7px;
+  border-radius: 5px;
+}
+
+/* Event page desing here */
+.events_section{
+  padding: 60px 0px;
+}
+.page_intro{
+  margin-bottom: 18px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  line-height: 23px;
+}
+.events_top_heading{
+  text-align: left;
+  border-bottom: 1px solid rgb(201, 199, 199);
+}
+.img_part img{
+  width: 310px;
+  height: 175px;
+  border-radius: 5px;
+  margin-right: 35px;
+}
+.event_group{
+  text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    border-bottom: 1px solid #d2caca;
+}
+.content_part{
+  width: 67%;
+}
+.content_part .title{
+  display: block;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.content_part .title:hover{
+  color: #1976a1;
+}
+.content_part .learn_more{
+  text-decoration: none;
+  background: #26aeed;;
+  padding: 5px 20px;
+  transition: .4s;
+  color: #fff;
+}
+.content_part .learn_more:hover {
+  background-color: #e8b11a;
+  color: #fff;
+}
+.content_part p , .content_part span{
+    font-size: 14px;
+    color: #897c7c;
+}
