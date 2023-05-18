@@ -1,17 +1,13 @@
 import { Container } from "react-bootstrap";
+import Banner from "../component/Common/Banner";
 const Events = () => {
- 
   return (
     <>
-      <div className="hotal_banner_section">
-        <Container>
-          <div className="about_text">
-            <h2 className="page_title">Overview of Event</h2>
-            <p className="subtitle">There’s so much to discover each week!</p>
-          </div>
-        </Container>
-        <div className="hotal_overlay"></div>
-      </div>
+      <Banner
+        className="event_banner_section"
+        title="Overview of Event"
+        subtitle="There’s so much to discover each week!"
+      />
       <div className="events_section">
         <Container>
           <div className="event_inner">
@@ -49,7 +45,9 @@ const Events = () => {
                   commodo diam libero vitae erat. Aenean faucibus nibh et justo
                   cursus id rutrum lorem.
                 </p>
-                <a href="" className="learn_more">Learn more</a>
+                <a href="" className="learn_more">
+                  Learn more
+                </a>
               </div>
             </div>
             <div className="event_group">
@@ -61,7 +59,7 @@ const Events = () => {
               </div>
               <div className="content_part">
                 <a href="" className="title">
-                All you can eat Sushi
+                  All you can eat Sushi
                 </a>
                 <span>
                   <strong>Location :</strong>Brussels
@@ -73,7 +71,9 @@ const Events = () => {
                   commodo diam libero vitae erat. Aenean faucibus nibh et justo
                   cursus id rutrum lorem.
                 </p>
-                <a href="" className="learn_more">Learn more</a>
+                <a href="" className="learn_more">
+                  Learn more
+                </a>
               </div>
             </div>
             <div className="event_group">
@@ -85,7 +85,7 @@ const Events = () => {
               </div>
               <div className="content_part">
                 <a href="" className="title">
-                Trip to the Mountains of Haiae
+                  Trip to the Mountains of Haiae
                 </a>
                 <span>
                   <strong>Location :</strong>Amsterdam
@@ -97,7 +97,9 @@ const Events = () => {
                   commodo diam libero vitae erat. Aenean faucibus nibh et justo
                   cursus id rutrum lorem.
                 </p>
-                <a href="" className="learn_more">Learn more</a>
+                <a href="" className="learn_more">
+                  Learn more
+                </a>
               </div>
             </div>
           </div>
