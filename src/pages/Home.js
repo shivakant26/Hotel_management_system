@@ -9,9 +9,7 @@ import { BsCheckAll } from "react-icons/bs";
 import SliderLeft from "../component/Home/SliderLeft";
 import SliderRight from "../component/Home/SliderRight";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import Footer from "../component/Layout/Footer";
 import OurServices from "../component/Common/OurServices";
-
 
 const Home = () => {
   return (
@@ -79,7 +77,6 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      {/* end banner section */}
       <div className="hero_form_section">
         <Container>
           <div className="hero_form">
@@ -125,7 +122,6 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      {/* wf_section */}
       <div className="blog_section">
         <Container>
           <div className="blog_card_wr">
@@ -161,7 +157,6 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      {/* service section */}
       <div className="service_section">
         <Container>
           <div className="service_wr">
@@ -247,7 +242,6 @@ const Home = () => {
         </Container>
         <div className="service_overlay"></div>
       </div>
-      {/* Our Services */}
       <OurServices />
     </>
   );

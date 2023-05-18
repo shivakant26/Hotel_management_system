@@ -12,6 +12,9 @@
 .logo_area{
   display: flex;
 }
+.logo_text{
+  text-align: left;
+}
 .logo_text h1{
   width: 250px;
     margin-top: 0px;
@@ -39,6 +42,7 @@
 }
 .menu_bottom ul li,.social_icon ul li{
   padding: 0px 10px;
+  position: relative;
 }
 .menu_bottom ul li a , .social_icon ul li a{
   text-decoration: none;
@@ -50,6 +54,26 @@
 }
 .menu_bottom ul li a:hover,.social_icon ul li a:hover{
   color: #222222;
+}
+.menu_bottom ul li ul{
+  padding: 0;
+  display: inline-block;
+  width: 205px;
+  z-index: 3;
+  background-color: #e8b11a;
+  top: 32px;
+  position: absolute;
+  left: 0px;
+  text-align: left;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+  padding: 11px 5px;
+}
+
+.menu_bottom ul li ul li{
+  padding: 2px 11px;
+}
+.menu_bottom ul li ul li a{
+  color: #fff;
 }
 strong{
   color: #a3a3a3;
@@ -68,7 +92,9 @@ strong{
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+
 /* slider design */
+
 .banner_section{
   position: relative;
 }
@@ -378,6 +404,7 @@ input[type="text"]{
     margin-top: 12px;
     margin-right: 10px;
     opacity: 1;
+    text-transform: uppercase;
     color: #e8e8e8;
     font-size: 18px;
     line-height: 16px;
@@ -487,6 +514,14 @@ input[type="text"]{
 }
 
 /* Event page desing here */
+.event_banner_section{
+  background-image: url("./assets/images/blogsecond.jpg");
+  padding: 80px 0px 80px 140px;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+
+}
 .events_section{
   padding: 60px 0px;
 }
@@ -593,4 +628,16 @@ input.input_field.form-control {
 .slider_left .swiper-button-prev:hover, .slider_left .swiper-button-next:hover,.slider_right .swiper-button-prev:hover, .slider_right .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 
+}
+/* room overview list */
+.roomoverview_section{
+  background-image: url("./assets/images/roomoverviewlist.jpg");
+  padding: 80px 0px 80px 140px;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+.content_part .uper_para{
+  color: gray;
+    margin: 0;
 }

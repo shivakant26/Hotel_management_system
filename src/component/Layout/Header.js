@@ -4,9 +4,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { ImLocation } from "react-icons/im";
 import { useState } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
   const [phone, setPhone] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const [mail, setMail] = useState(false);
   const [location, setLocation] = useState(false);
   const handleClick = (key) => {
@@ -30,6 +32,9 @@ const Header = () => {
         return "";
     }
   };
+  const showSubmenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <div className="header">
@@ -38,8 +43,8 @@ const Header = () => {
             <div className="logo_area">
               <div className="logo_text">
                 <Link to="/">
-                <h1>Surya</h1>
-                <h2 className="subtitle">Hotel & Resort</h2>
+                  <h1>Surya</h1>
+                  <h2 className="subtitle">Hotel & Resort</h2>
                 </Link>
               </div>
             </div>
@@ -79,17 +84,17 @@ const Header = () => {
                 <div className="social_icon">
                   <ul>
                     <li>
-                      <Link to="" className={phone ? "active" : ""}>
+                      <Link className={phone ? "active" : ""}>
                         <FaPhoneAlt onClick={() => handleClick("phone")} />
                       </Link>
                     </li>
                     <li>
-                      <Link to="" className={mail ? "active" : ""}>
+                      <Link className={mail ? "active" : ""}>
                         <IoIosMail onClick={() => handleClick("mail")} />
                       </Link>
                     </li>
                     <li>
-                      <Link to="" className={location ? "active" : ""}>
+                      <Link className={location ? "active" : ""}>
                         <ImLocation onClick={() => handleClick("location")} />
                       </Link>
                     </li>
@@ -107,8 +112,28 @@ const Header = () => {
                   <li>
                     <Link to="/resort">Resort</Link>
                   </li>
-                  <li>
-                    <Link to="/rooms">Room</Link>
+                  <li onClick={showSubmenu}>
+                    <Link>
+                      Room <MdKeyboardArrowDown />
+                    </Link>
+                    {showMenu ? (
+                      <>
+                        <ul>
+                          <li>
+                            <Link to="/room-overview-list">
+                              Room Overview List
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/room-overview-column">
+                              Room Overview Column
+                            </Link>
+                          </li>
+                        </ul>
+                      </>
+                    ) : (
+                      ""
+                    )}
                   </li>
                   <li>
                     <Link to="/events">Event</Link>
