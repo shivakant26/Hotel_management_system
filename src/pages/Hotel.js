@@ -1,7 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import OurServices from "../component/Common/OurServices";
-import Footer from "../component/Layout/Footer";
-import { useLocation } from "react-router-dom";
+
 const Hotel = () => {
   return (
     <>

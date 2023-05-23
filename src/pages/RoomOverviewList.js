@@ -1,10 +1,11 @@
 import { Container } from "react-bootstrap";
 import Rating from "../component/Common/Rating";
 import Banner from "../component/Common/Banner";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RoomOverviewListData } from "../utils/constants";
 
 const RoomOverviewList = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Banner
@@ -40,7 +41,7 @@ const RoomOverviewList = () => {
               </div>
               <div className="content_part">
                 <p className="uper_para">Discover our</p>
-                <Link href={item.url} className="title">
+                <Link to={`/room/${item.url}`} className="title">
                   {item?.title}
                 </Link>
                 <Rating />

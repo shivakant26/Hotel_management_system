@@ -641,3 +641,75 @@ input.input_field.form-control {
   color: gray;
     margin: 0;
 }
+.error{
+  color: red;
+}
+/* responsive */
+@media only screen and (max-width:1199px) {
+  .container{
+    width: 96%;
+  }
+}  /* upto 1024 */
+
+@media only screen and (max-width:1023px) {
+  .column1, .column2, .column3, .column4 {
+    margin: 10px;
+    width: 46%;
+    text-align: left;
+}
+.blog_card {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.common_list {
+  width: 50%;
+  padding: 20px;
+}
+} /** 980 **/
+
+@media only screen and (max-width:979px) {
+
+} /** 768 **/
+
+@media only screen and (max-width:767px) {
+  .our_scard {
+    width: 48%;
+    margin-bottom: 10px;
+    
+}
+} /** 650 **/
+
+@media only screen and (max-width:649px) {
+  .footer_btm {
+    justify-content: center;
+}
+} /** 480 **/
+
+@media only screen and (max-width:479px) {
+  .blog_text {
+    padding: 0px;
+}
+.services {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.our_scard {
+  width: 94%;
+}
+.common_list {
+  width: 100%;
+}
+.column1, .column2, .column3, .column4 {
+  width: 100%;
+}
+.slider_text {
+  height: 100%;
+  padding: 81px 0px;
+  text-align: center;
+}
+} /** 320 **/
+
+@media only screen and (max-width:320px) { 
+
+
+}

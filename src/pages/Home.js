@@ -10,8 +10,15 @@ import SliderLeft from "../component/Home/SliderLeft";
 import SliderRight from "../component/Home/SliderRight";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import OurServices from "../component/Common/OurServices";
+import { useForm } from "react-hook-form";
+import InputField from "../component/Common/InputFields";
 
 const Home = () => {
+  const { handleSubmit, control } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <>
       <div className="banner_section">
@@ -79,35 +86,58 @@ const Home = () => {
       </div>
       <div className="hero_form_section">
         <Container>
-          <div className="hero_form">
-            <div className="column1">
-              <span className="span_text">
-                <BsCheckAll />
-                21 years experience
-              </span>
-              <input type="text" placeholder="Enter your name" />
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="hero_form">
+              <div className="column1">
+                <span className="span_text">
+                  <BsCheckAll />
+                  21 years experience
+                </span>
+                <InputField
+                  label="Name"
+                  name="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  control={control}
+                  rules={{ required: "Name is required*" }}
+                />
+              </div>
+              <div className="column2">
+                <span className="span_text">
+                  <BsCheckAll />1 million visitors since 2014
+                </span>
+                <InputField
+                  label="Name"
+                  name="email"
+                  type="text"
+                  placeholder="Email address"
+                  control={control}
+                  rules={{ required: "Email is required*" }}
+                />
+              </div>
+              <div className="column3">
+                <span className="span_text">
+                  <BsCheckAll />
+                  Overall rating of 8.5
+                </span>
+                <InputField
+                  label="Name"
+                  name="phone"
+                  type="text"
+                  placeholder="phone number"
+                  control={control}
+                  rules={{ required: "Phone is required*" }}
+                />
+              </div>
+              <div className="column4">
+                <span className="span_text">
+                  <BsCheckAll />
+                  10.000+ positive reviews
+                </span>
+                <button className="subs_btn">Subscribe to Updates</button>
+              </div>
             </div>
-            <div className="column2">
-              <span className="span_text">
-                <BsCheckAll />1 million visitors since 2014
-              </span>
-              <input type="text" placeholder="Email address" />
-            </div>
-            <div className="column3">
-              <span className="span_text">
-                <BsCheckAll />
-                Overall rating of 8.5
-              </span>
-              <input type="text" placeholder="phone number" />
-            </div>
-            <div className="column4">
-              <span className="span_text">
-                <BsCheckAll />
-                10.000+ positive reviews
-              </span>
-              <button className="subs_btn">Subscribe to Updates</button>
-            </div>
-          </div>
+          </form>
         </Container>
       </div>
       <div className="wf_section">
