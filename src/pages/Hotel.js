@@ -86,7 +86,7 @@ const Hotel = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse varius enim in eros elementum tristique.
                   </p>
-                  <button>More about our Event</button>
+                  <button className="the_popular_btn">More about our Event</button>
                 </Col>
                 <Col md={6}></Col>
               </Row>
