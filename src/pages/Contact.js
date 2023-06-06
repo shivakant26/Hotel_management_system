@@ -1,8 +1,8 @@
 import { Col, Container, Form, InputGroup, Row } from "react-bootstrap";
 import MyMapComponent from "../component/GoogleMap";
-import {FaUser} from 'react-icons/fa';
-import {IoIosCall , IoIosMail} from 'react-icons/io';
-import {ImLocation} from 'react-icons/im';
+import { FaUser } from "react-icons/fa";
+import { IoIosCall, IoIosMail } from "react-icons/io";
+import { ImLocation } from "react-icons/im";
 import OurServices from "../component/Common/OurServices";
 
 const Contact = () => {
@@ -24,32 +24,51 @@ const Contact = () => {
             </Col>
             <Col md={8}>
               <div className="contact_us_form">
-                <Form>
                   <Row>
                     <Col md={6}>
                       <InputGroup className="mb-3">
-                        <InputGroup.Text id="basic-addon1"><FaUser /></InputGroup.Text>
-                        <Form.Control className="input_field" placeholder="Enter your name" />
+                        <InputGroup.Text id="basic-addon1">
+                          <FaUser />
+                        </InputGroup.Text>
+                        <Form.Control
+                          className="input_field"
+                          placeholder="Enter your name"
+                        />
                       </InputGroup>
                     </Col>
                     <Col md={6}>
                       <InputGroup className="mb-3">
-                        <InputGroup.Text id="basic-addon1"><IoIosCall/></InputGroup.Text>
-                        <Form.Control className="input_field"  placeholder="Phone number" />
+                        <InputGroup.Text id="basic-addon1">
+                          <IoIosCall />
+                        </InputGroup.Text>
+                        <Form.Control
+                          className="input_field"
+                          placeholder="Phone number"
+                        />
                       </InputGroup>
                     </Col>
                   </Row>
                   <Row>
                     <Col md={6}>
                       <InputGroup className="mb-3">
-                        <InputGroup.Text id="basic-addon1"><IoIosMail /></InputGroup.Text>
-                        <Form.Control className="input_field"  placeholder="Email Address" />
+                        <InputGroup.Text id="basic-addon1">
+                          <IoIosMail />
+                        </InputGroup.Text>
+                        <Form.Control
+                          className="input_field"
+                          placeholder="Email Address"
+                        />
                       </InputGroup>
                     </Col>
                     <Col md={6}>
                       <InputGroup className="mb-3">
-                        <InputGroup.Text id="basic-addon1"><ImLocation/></InputGroup.Text>
-                        <Form.Control className="input_field"  placeholder="Location" />
+                        <InputGroup.Text id="basic-addon1">
+                          <ImLocation />
+                        </InputGroup.Text>
+                        <Form.Control
+                          className="input_field"
+                          placeholder="Location"
+                        />
                       </InputGroup>
                     </Col>
                   </Row>
@@ -67,9 +86,8 @@ const Contact = () => {
                     </Form.Group>
                   </Row>
                   <div className="button_row">
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                   </div>
-                </Form>
               </div>
             </Col>
           </Row>

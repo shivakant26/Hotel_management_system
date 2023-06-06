@@ -11,7 +11,7 @@ export const RoomOverviewListData = [
       image: require("../assets/images/room1.jpg"),
       magicText: "Discover our",
       title:"large airy studio",
-      url:"/room/large-airy-studio",
+      url:"large-airy-studio",
       aboutText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique. Duiscursus, mi quis viverra ornare, eros dolor interdum nulla, utcommodo diam libero vitae erat. Aenean faucibus nibh et justocursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
       price: "416",
@@ -20,7 +20,7 @@ export const RoomOverviewListData = [
       image: require("../assets/images/room2.jpg"),
       magicText: "Discover our",
       title:"luxury bridal suite",
-      url:"/room/luxury-bridal-suite",
+      url:"luxury-bridal-suite",
       aboutText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique. Duiscursus, mi quis viverra ornare, eros dolor interdum nulla, utcommodo diam libero vitae erat. Aenean faucibus nibh et justocursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
       price: "425",
@@ -29,7 +29,7 @@ export const RoomOverviewListData = [
       image: require("../assets/images/room3.jpg"),
       magicText: "Discover our",
       title:"standard big family apartment",
-      url:"/room/standard-big-family-apartment",
+      url:"standard-big-family-apartment",
       aboutText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique. Duiscursus, mi quis viverra ornare, eros dolor interdum nulla, utcommodo diam libero vitae erat. Aenean faucibus nibh et justocursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
       price: "440",
@@ -38,7 +38,7 @@ export const RoomOverviewListData = [
       image: require("../assets/images/room4.jpg"),
       magicText: "Discover our",
       title:"standard 2 persons suite",
-      url:"/room/standard-2-persons-suite",
+      url:"standard-2-persons-suite",
       aboutText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique. Duiscursus, mi quis viverra ornare, eros dolor interdum nulla, utcommodo diam libero vitae erat. Aenean faucibus nibh et justocursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
       price: "500",
